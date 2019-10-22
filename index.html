@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Wally`s Widget Company</title>
+		<script type="text/javascript" src="js/orderPackage.js"></script>
+	</head>
+	<body>
+		<input type="text" id="order_amount" />
+		<button id="get_packages">Get packages</button>
+		<div id="order_details"></div>
+		<script>
+			var OrderPackage = new OrderPackage();
+			document.addEventListener('DOMContentLoaded', function(){ 
+				OrderPackage.setOutputElement('order_details');
+				OrderPackage.setButton('get_packages');
+				OrderPackage.setOrderAmountInput('order_amount');
+			});
+		</script>
+	</body>
+</html>
